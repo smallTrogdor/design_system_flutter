@@ -48,6 +48,8 @@ General instructions on _how_ to contribute can be found under [Contributing](Co
 
 This project is built and tested using [Github Actions](https://docs.github.com/en/actions). On every push to any branch, a `test` workflow is triggered, running all tests in the `.\test\` dir. Failed golden tests will be uploaded to the job artifacts. The tests run on a _macos_ runner.
 
+Github releases are automated by a workflow as well.
+
 ## Authors
 
 * **Hoang Tran**
