@@ -28,5 +28,6 @@ jobs:
           version: ${{ inputs.semantic-versioning }}
           keep-unreleased-section: true
           tag-prefix: ''
+          output-file: new_changelog.md
           
   
