@@ -1,0 +1,33 @@
+name: SBB Design System Flutter Release
+
+on: 
+  workflow_dispatch:
+    inputs:
+      semantic-versioning:
+        description: Whether to increase major, minor or patch.
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+        - patch
+        - minor
+        - major
+
+jobs:
+  release-preparation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+
+      - name: Update Changelog
+        uses: release-flow/keep-a-changelog-action@v3
+        with:
+          command: bump
+          version: ${{ inputs.semantic-versioning }}
+          keep-unreleased-section: true
+          tag-prefix: ''
+          output-file: new_changelog.md
+          
+  
