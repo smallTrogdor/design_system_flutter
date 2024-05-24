@@ -54,6 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * `SBBAccordion`: Added field `titleMaxLines` (with default value `null`, meaning titles are now multiline by default)
 * `SBBAccordion`: Added constructor `single` for simpler usage when only one item is needed
 * `SBBListHeader`: Added field `maxLines` (with default value `null`, meaning list headers are now multiline by default)
+
 ### Changed
 
 - `SBBThemeData`: Adjusted some colors to match the current specifications
@@ -85,7 +86,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `SBBCheckboxListItem`: Added missing bottom padding for multi line without secondary label
 - `SBBIconTextButton`: Button is not clickable anymore when disabled
 
-## [1.2.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.1.0&sourceBranch=refs/tags/1.2.0) - 19.12.2023
+## [1.2.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.1.0&sourceBranch=refs/tags/1.2.0) - 2023-12-19
 
 ### Added
 * (#63) Added `SBBMessage`
@@ -96,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * (#57) Added `SBBTimePicker`
 * (#57) Added `SBBDateTimePicker`
 
-## [1.1.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.0.0&sourceBranch=refs/tags/1.1.0) - 01.09.2023
+## [1.1.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.0.0&sourceBranch=refs/tags/1.1.0) - 2023-09-01
 
 ### Added
 * (#73) Added `SBBSlider`
@@ -120,7 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * (#83) `SBBTabBar`: Fixed bug where animations were not symmetric
 
-## [1.0.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.1&sourceBranch=refs/tags/1.0.0) - 26.05.2023
+## [1.0.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.1&sourceBranch=refs/tags/1.0.0) - 2023-05-26
 
 ### Added
 * (#62) `SBBColors`: Added new colors to match current specifications
@@ -131,7 +132,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * (#62) `SBBColors`: Changed color `green` to match current specifications
 * `SBBOnboarding`: Changed screen reader behaviour
 
-## [0.7.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.0&sourceBranch=refs/tags/0.7.1) - 19.01.2023
+## [0.7.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.0&sourceBranch=refs/tags/0.7.1) - 2023-01-19
 
 ### Added
 * Added `SBBStatus` (for web)
@@ -141,7 +142,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * `SBBSelect`: No pixel overflow when using larger font
 * `SBBAutocompletion`: Corrected colors
 
-## [0.7.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.6.0&sourceBranch=refs/tags/0.7.0) - 25.11.2022
+## [0.7.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.6.0&sourceBranch=refs/tags/0.7.0) - 2022-11-25
 
 ### Added 
 * `SBBTabBar`: Added functionality to show warnings
@@ -164,12 +165,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Refactored theming to use [`ThemeExtensions`](https://api.flutter.dev/flutter/material/ThemeExtension-class.html) introduced in Flutter 3
 * `SBBLeanLogo` renamed to `SBBWebLogo`
 
-## [0.6.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.5.0&sourceBranch=refs/tags/0.6.0) - 19.05.2022
+## [0.6.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.5.0&sourceBranch=refs/tags/0.6.0) - 2022-05-19
 
 ### Changed
 * Migration to Flutter 3.0.0
 
-## [0.5.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.4.0&sourceBranch=refs/tags/0.5.0) - 19.05.2022
+## [0.5.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.4.0&sourceBranch=refs/tags/0.5.0) - 2022-05-19
 
 ### Added
 * Added `SBBLeanLogo` (for web)
@@ -209,7 +210,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * `SBBCheckboxListItem`: Added missing bottom padding for multiline without secondary label
 
-## [0.4.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.3.0&sourceBranch=refs/tags/0.4.0) - 19.05.2022
+## [0.4.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.3.0&sourceBranch=refs/tags/0.4.0) - 2022-05-19
 
 ### Added
 * Added `SBBTabBar`
@@ -227,7 +228,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * `SBBModalSheet`: Fine line that sometimes was visible below the header is now gone
 
-## [0.3.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.2.0&sourceBranch=refs/tags/0.3.0) - 29.07.2021
+## [0.3.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.2.0&sourceBranch=refs/tags/0.3.0) - 2021-07-29
 
 ### Added
 
@@ -237,7 +238,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.2.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.1.0&sourceBranch=refs/tags/0.2.0) - 08.06.2021
+## [0.2.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.1.0&sourceBranch=refs/tags/0.2.0) - 2021-06-08
 
 ### Added
 
@@ -307,7 +308,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.1.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.0.2&sourceBranch=refs/tags/0.1.0) - 05.02.2021
+## [0.1.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.0.2&sourceBranch=refs/tags/0.1.0) - 2021-02-05
 
 ### Added
 
@@ -319,7 +320,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.0.2](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.0.1&sourceBranch=refs/tags/0.0.2) - 15.01.2021
+## [0.0.2](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.0.1&sourceBranch=refs/tags/0.0.2) - 2021-01-15
 
 ### Added
 
@@ -331,7 +332,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.0.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=48d4c63d89f78f14f54bef0eea9455ca1f456ad1&sourceBranch=refs%2Ftags%2F0.0.1) - 29.05.2020
+## [0.0.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=48d4c63d89f78f14f54bef0eea9455ca1f456ad1&sourceBranch=refs%2Ftags%2F0.0.1) - 2020-05-29
 
 ### Added
 
