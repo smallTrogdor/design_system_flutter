@@ -1,6 +1,9 @@
 # Changelog
 
----
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
@@ -82,9 +85,147 @@
 - `SBBCheckboxListItem`: Added missing bottom padding for multi line without secondary label
 - `SBBIconTextButton`: Button is not clickable anymore when disabled
 
----
+## [1.2.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.1.0&sourceBranch=refs/tags/1.2.0) - 19.12.2023
 
----
+### Added
+* (#63) Added `SBBMessage`
+* (#89) Added `SBBNotificationBox`
+* (#90) Added `SBBStatusMobile`
+* (#57) Added `SBBPicker`
+* (#57) Added `SBBDatePicker`
+* (#57) Added `SBBTimePicker`
+* (#57) Added `SBBDateTimePicker`
+
+## [1.1.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/1.0.0&sourceBranch=refs/tags/1.1.0) - 01.09.2023
+
+### Added
+* (#73) Added `SBBSlider`
+* (#59) Added `SBBSwitch`
+* (#67) Added `SBBPromotionBox`
+* (#74) Added `SBBChip`
+* (#82) Added `SBBPagination`
+* `SBBListItem`: Added constructor `custom` for custom trailing Widget
+* `SBBListItem`: Added constructor `button` for button variant
+
+### Changed
+* `SBBBaseStyle`: Changed value of `labelColor` to match current specifications
+* `SBBListItemStyle`: Changed color values to match current specifications
+* `SBBListItem`: Default constructor builds (trailing) icon variant instead of button variant when `trailingIcon` is not `null`
+   * For backwards compatibility default constructor still builds button variant if `onCallToAction` is not `null`
+
+### Deprecated
+* `SBBListItem`: Parameter `onCallToAction` is now `deprecated`
+   * Use the newly added constructor `custom` for the button variant
+
+### Fixed
+* (#83) `SBBTabBar`: Fixed bug where animations were not symmetric
+
+## [1.0.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.1&sourceBranch=refs/tags/1.0.0) - 26.05.2023
+
+### Added
+* (#62) `SBBColors`: Added new colors to match current specifications
+
+### Changed
+* (#60) Migration to Flutter 3.10.0
+* (#52) `SBBSegmentedButton`: Updated UI to match current specifications
+* (#62) `SBBColors`: Changed color `green` to match current specifications
+* `SBBOnboarding`: Changed screen reader behaviour
+
+## [0.7.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.7.0&sourceBranch=refs/tags/0.7.1) - 19.01.2023
+
+### Added
+* Added `SBBStatus` (for web)
+
+### Fixed
+* `SBBIconTextButton`: Button is not clickable anymore when disabled
+* `SBBSelect`: No pixel overflow when using larger font
+* `SBBAutocompletion`: Corrected colors
+
+## [0.7.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.6.0&sourceBranch=refs/tags/0.7.0) - 25.11.2022
+
+### Added 
+* `SBBTabBar`: Added functionality to show warnings
+	* `SBBTabBar`: Added field `showWarning` (with default value `false`)
+	* `SBBTabBar`: Added field `warningIndex`
+	* `TabItemWidget`: Added field `warning` (with default value `false`)
+* `SBBSegmentedButton`: Added more fields to customise
+	* `SBBSegmentedButton`: Added field `borderColor`
+	* `SBBSegmentedButton`: Added field `boxShadow`
+* Added `SBBRadioButton` (for web)
+* Added `SBBAutocompletion` (for web)
+* Added `SBBCard` (for web)
+* Added `SBBAccordion` (for web)
+* Added `SBBTextFormField` (for web)
+* Added `SBBTextField` (for web)
+* Added `SBBDropdownButton` (for web)
+* Added `SBBWebNotification` (for web)
+
+### Changed 
+* Refactored theming to use [`ThemeExtensions`](https://api.flutter.dev/flutter/material/ThemeExtension-class.html) introduced in Flutter 3
+* `SBBLeanLogo` renamed to `SBBWebLogo`
+
+## [0.6.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.5.0&sourceBranch=refs/tags/0.6.0) - 19.05.2022
+
+### Changed
+* Migration to Flutter 3.0.0
+
+## [0.5.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.4.0&sourceBranch=refs/tags/0.5.0) - 19.05.2022
+
+### Added
+* Added `SBBLeanLogo` (for web)
+* Added `SBBBreadcrumb` (for web)
+* Added `SBBWebHeader` (for web)
+* Added `SBBResponsive` (for web)
+* Added `SBBSideBar` (for web)
+* Added `SBBMenuButton` (for web)
+* Added `SBBUserMenu` (for web)
+* `SBBPrimaryButton`: Added different theme based on hostType (for web)
+* `SBBTheme`:Added field `hostType`
+* `SBBIcons`: Added new icons
+* `SBBThemeData`: Added function `allStates`
+* `SBBThemeData`: Added function `resolveStateWith`
+* `SBBTextField`: Added field `autofocus`
+* `SBBTextFormField`: Added field `autofocus`
+* `SBBTextField`: Added field `autofocus`
+* `SBBTextFormField`: Added field `autofocus`
+* `SBBMultiSelect`: Added field `selectionValidation` and static function `defaultSelectionValidation` for custom selection validation
+* `SBBSelect`: Added field `allowMultilineLabel`
+* `SBBSelect`: Added field `hint`
+* `SBBAccordion`: Added field `titleMaxLines` (with default value `null`, meaning titles are now multiline by default)
+* `SBBAccordion`: Added constructor `single` for simpler usage when only one item is needed
+* `SBBListHeader`: Added field `maxLines` (with default value `null`, meaning list headers are now multiline by default)
+* `SBBListItem`: Added field `titleMaxLines` (with default value `null`, meaning titles are now multiline by default)
+* `SBBListItem`: Added field `subtitleMaxLines` (with default value `null`, meaning subtitles are now multiline by default)
+
+### Changed
+* `SBBThemeData`: Adjusted some colors to match the current specifications
+* `SBBOnboarding`: Padding now defined by `SBBThemeData.defaultRootContainerPadding`
+* `SBBSelect`: Adjusted paddings to match the current specifications
+* `SBBMultiSelect`: Adjusted paddings to match the current specifications
+* `SBBRadioButtonListItem`: Adjusted paddings to match the current specifications
+* `SBBSelect`: Field `label` is now optional because there is now a variant without label
+* `SBBAccordion`: Adjusted paddings, text style and icon rotation to match the current specifications
+
+### Fixed
+* `SBBCheckboxListItem`: Added missing bottom padding for multiline without secondary label
+
+## [0.4.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.3.0&sourceBranch=refs/tags/0.4.0) - 19.05.2022
+
+### Added
+* Added `SBBTabBar`
+* Added global function `showCustomSBBModalSheet`
+* `SBBModalSheet`: Added field `useRootNavigator` (with default value `true`)
+* `SBBModalSheet`: Added constructor `custom` for header customizing
+* `SBBToast`: Added field `bottom`
+### Changed
+* `SBBTextStyles`: Adjusted `fontSize` and `height` values to match the current specifications
+* `SBBListHeader`: Adjusted paddings to match the current specifications
+* `SBBTextField`: Adjusted paddings to match the current specifications
+### Removed
+* `SBBListHeader`: Removed fields `icon` and `onCallToAction` to match the current specifications
+* `SBBTextField`: Removed field `alignLabelWithHint`
+### Fixed
+* `SBBModalSheet`: Fine line that sometimes was visible below the header is now gone
 
 ## [0.3.0](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=refs/tags/0.2.0&sourceBranch=refs/tags/0.3.0) - 29.07.2021
 
