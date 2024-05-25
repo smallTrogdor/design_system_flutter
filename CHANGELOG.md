@@ -334,7 +334,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [0.0.1](https://code.sbb.ch/projects/KD_FLUTTER/repos/design_system_flutter/compare/diff?targetBranch=48d4c63d89f78f14f54bef0eea9455ca1f456ad1&sourceBranch=refs%2Ftags%2F0.0.1) - 2020-05-29
+## [0.0.1] - 2020-05-29
 
 ### Added
 
