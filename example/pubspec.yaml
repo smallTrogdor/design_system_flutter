@@ -25,7 +25,7 @@ dependencies:
   flutter_svg: ^2.0.6
 
   # https://pub.dev/packages/intl
-  intl: ^0.18.1
+  intl: ">=0.18.1"
 
   design_system_flutter:
     path: ../
