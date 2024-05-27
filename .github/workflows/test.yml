@@ -72,7 +72,7 @@ jobs:
         sdk: ["3.16.9", ""]
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Write Keystore from base64 encoded secret.
         id: write_keystore
         uses: timheuer/base64-to-file@v1.2
@@ -80,7 +80,7 @@ jobs:
           fileName: "fdsm_keystore.jks"
           fileDir: "./example/android/app/keys"
           encodedString: ${{ secrets.KEYSTORE_64 }}
-      
+
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ matrix.sdk }}
@@ -127,9 +127,6 @@ jobs:
         with:
           flutter-version: ${{ matrix.sdk }}
           cache: true
-      - uses: maxim-lobanov/setup-cocoapods@v1
-        with:
-          podfile-path: example/ios/Podfile.lock
       - run: flutter pub get
       - name: Build iOS package
         run: flutter build ios --simulator
@@ -139,3 +136,4 @@ jobs:
         with:
           name: fdsm-example.app
           path: example/build/ios/iphonesimulator
+          retention-days: 5
