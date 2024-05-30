@@ -50,14 +50,13 @@ jobs:
         with:
           commit-message: ${{ format('Prepare Release for version {0}', steps.update-changelog.outputs.version) }}
           branch: ${{ format('release/{0}', steps.update-changelog.outputs.version) }}
-          title: ${{ format('Make release changes for version {0}', steps.update-changelog.outputs.version) }}
+          title: ${{ format('Release {0}', steps.update-changelog.outputs.version) }}
           body: |
             Make changes for release.
             - Update pubspec
             - Update CHANGELOG.md
           labels: |
             release
-          reviewers: smallTrogdor, vanHoangTran
   
   # github-release:
   #   runs-on: ubuntu-latest
