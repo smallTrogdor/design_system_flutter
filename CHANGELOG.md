@@ -9,6 +9,9 @@ It is expected that you keep this format strictly, since we depend on it in our 
 
 ## [Unreleased]
 
+### Fixed
+- Fake Fix
+
 ## [1.2.1] - 2024-05-30
 
 ### Added
