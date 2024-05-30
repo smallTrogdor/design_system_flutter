@@ -47,7 +47,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6.0.5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: ${{ format('Prepare Release for version {0}', steps.update-changelog.outputs.version) }}
           branch: ${{ format('release/{0}', steps.update-changelog.outputs.version) }}
           title: ${{ format('Make release changes for version {0}', steps.update-changelog.outputs.version) }}
