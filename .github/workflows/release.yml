@@ -14,7 +14,7 @@ on:
         - major
 
 jobs:
-  release-preparation:
+  pull-request-creation:
     permissions:
       pull-requests: write
       contents: write
