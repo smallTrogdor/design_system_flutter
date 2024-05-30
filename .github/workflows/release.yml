@@ -16,7 +16,7 @@ on:
 jobs:
   release-preparation:
     permissions:
-      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
 
     outputs:
