@@ -9,7 +9,10 @@ It is expected that you keep this format strictly, since we depend on it in our 
 
 ## [Unreleased]
 
+## [1.2.2] - 2024-05-30
+
 ### Fixed
+
 - Fake Fix
 
 ## [1.2.1] - 2024-05-30
@@ -299,7 +302,9 @@ It is expected that you keep this format strictly, since we depend on it in our 
 - Initial project setup
 - Added some widgets
 
-[Unreleased]: https://github.com/smallTrogdor/design_system_flutter/compare/1.2.1...HEAD
+[Unreleased]: https://github.com/smallTrogdor/design_system_flutter/compare/1.2.2...HEAD
+
+[1.2.2]: https://github.com/smallTrogdor/design_system_flutter/compare/1.2.1...1.2.2
 
 [1.2.1]: https://github.com/smallTrogdor/design_system_flutter/compare/1.2.0...1.2.1
 
