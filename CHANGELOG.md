@@ -9,6 +9,10 @@ It is expected that you keep this format strictly, since we depend on it in our 
 
 ## [Unreleased]
 
+### Changed
+
+- Changed the release flow.
+
 ## [1.3.0] - 2024-05-30
 
 ### Added
