@@ -5,6 +5,14 @@ name: Validate
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
   workflow_dispatch:
 
 # Ensure that new pushes/updates cancel running jobs
