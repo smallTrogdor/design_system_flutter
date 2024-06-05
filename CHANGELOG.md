@@ -7,6 +7,81 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 It is expected that you keep this format strictly, since we depend on it in our release workflow.
 
+## 1.3.1 (2024-06-05)
+
+
+### Features
+
+* add (WIP) version of SBB BreadCrumbs ([20a100b](https://github.com/smallTrogdor/design_system_flutter/commit/20a100be595d904d6ae3c50122932acb32437192))
+* add checkbox styles for web ([cacd329](https://github.com/smallTrogdor/design_system_flutter/commit/cacd3296f302098b499f42aea32e3d892fb661ee))
+* add factory for creating a standard SBB tile item ([7701223](https://github.com/smallTrogdor/design_system_flutter/commit/7701223b2d9a57aae0a3913d4391bc79e29987e5))
+* add link for web ([e754c2a](https://github.com/smallTrogdor/design_system_flutter/commit/e754c2a6a5219b8618d46ea685418889d73b556a))
+* add logo page to web example to showcase different logos. ([fe3e836](https://github.com/smallTrogdor/design_system_flutter/commit/fe3e836f54b2a1683323c8b69e0bad2f88114883))
+* add Navigation Item for WebHeader ([058313b](https://github.com/smallTrogdor/design_system_flutter/commit/058313bb1c9fb65837b0dd944e61e207faa445a2))
+* add SBBSidebar ([e66f35f](https://github.com/smallTrogdor/design_system_flutter/commit/e66f35f0722688e806907c4e9e8b2d56f293fa3f))
+* add SBBWebText to facilitate h1, h2, h3, h4 usage ([15b7cfb](https://github.com/smallTrogdor/design_system_flutter/commit/15b7cfbab723654066e72abf51acaab47e3b328c))
+* add SBBWebText.running for running text ([9f8cbba](https://github.com/smallTrogdor/design_system_flutter/commit/9f8cbbab8c9c9997a717f1680fcc35add557ab73))
+* add support for web testing ([bc6d725](https://github.com/smallTrogdor/design_system_flutter/commit/bc6d725b8f138f49f303f6239d28ff1607cdbb84))
+* added accordion for web ([8f92b48](https://github.com/smallTrogdor/design_system_flutter/commit/8f92b480961c4d9481b6ea27b5be3a46fe084c08))
+* added accordion web test ([2c6fda2](https://github.com/smallTrogdor/design_system_flutter/commit/2c6fda2a7986c980157894852dd7b8f000a3759c))
+* added autocomplete for web ([18afb07](https://github.com/smallTrogdor/design_system_flutter/commit/18afb0741179c5a165e88ade7201e8fa8b54ec97))
+* added AutoRouter for easier navigation. ([0c7cca2](https://github.com/smallTrogdor/design_system_flutter/commit/0c7cca2a5307d1eb4895405c5f3b04b3a9035feb))
+* added card for web ([a46bfd4](https://github.com/smallTrogdor/design_system_flutter/commit/a46bfd4adae3b59cce07101b7709e3e1212780a0))
+* added radiobutton for web ([af06d1b](https://github.com/smallTrogdor/design_system_flutter/commit/af06d1b607aa483347d8001b4b8f9c178ccc1c13))
+* added status for web ([66386ee](https://github.com/smallTrogdor/design_system_flutter/commit/66386ee3411b8464df406aeaf345b54b09b7a972))
+* added text form field for web ([e985fd1](https://github.com/smallTrogdor/design_system_flutter/commit/e985fd156809a912437fd7efc7c6cb662fe6cce2))
+* added Text Styling to example ([4da41d6](https://github.com/smallTrogdor/design_system_flutter/commit/4da41d6fc9c4bd341ed1d551b5de0b408be5b134))
+* added textfields for web ([06f2dbd](https://github.com/smallTrogdor/design_system_flutter/commit/06f2dbdf2d1930660f690a1ddda4dad6ae8d505b))
+* added web support for toast ([7adf5c7](https://github.com/smallTrogdor/design_system_flutter/commit/7adf5c76fa9138b280c2d273b4f9eb3bfd00e5f8))
+* adds responsive layout builder to SBBResponsive ([821466c](https://github.com/smallTrogdor/design_system_flutter/commit/821466cd81e5fd44f4d7aeadc51f15101295c3a4))
+* adds SBBBreadcrumb with SBBBreadCrumbItems ([4228e76](https://github.com/smallTrogdor/design_system_flutter/commit/4228e76977afa197bda09a3c32ce91e7c2c2b004))
+* adds web showcase app ([eafd983](https://github.com/smallTrogdor/design_system_flutter/commit/eafd983490fb980b2b2a015a8b0ed3a2b346d77d))
+* adjustable logo border color to create variations according to lynx. ([e487fe3](https://github.com/smallTrogdor/design_system_flutter/commit/e487fe378ac43813953ed130774372bd375ab480))
+* applies SBBWebText to ButtonPage ([8efd926](https://github.com/smallTrogdor/design_system_flutter/commit/8efd926f5588daa07169c856596e41cf5d34ca4d))
+* applies SBBWebText to Link and CheckboPage ([869cbbb](https://github.com/smallTrogdor/design_system_flutter/commit/869cbbbf55034d4129bf3795622dda5920dd9b67))
+* build iOS example App with Icon ([ba641a9](https://github.com/smallTrogdor/design_system_flutter/commit/ba641a97c2492364151385800a6777e2a720891d))
+* changed icon buttons to incorporate either small or large in constructor ([d7e5c41](https://github.com/smallTrogdor/design_system_flutter/commit/d7e5c418f907473ac3ad71a18d503652a9eb7d79))
+* complete overhaul of web example. ([0c7cca2](https://github.com/smallTrogdor/design_system_flutter/commit/0c7cca2a5307d1eb4895405c5f3b04b3a9035feb))
+* generic child widget in SBBMenuItem ([7701223](https://github.com/smallTrogdor/design_system_flutter/commit/7701223b2d9a57aae0a3913d4391bc79e29987e5))
+* includes SBBSidebar for navigation from homepage. ([0c7cca2](https://github.com/smallTrogdor/design_system_flutter/commit/0c7cca2a5307d1eb4895405c5f3b04b3a9035feb))
+* link page stub for building native (import html) ([ba641a9](https://github.com/smallTrogdor/design_system_flutter/commit/ba641a97c2492364151385800a6777e2a720891d))
+* make breadcrumb wrappable ([c7bfe9f](https://github.com/smallTrogdor/design_system_flutter/commit/c7bfe9f253e506021621a599888e8905ab7c2186))
+* SBBLoadingIndicator gets white opacity background in Web. ([4d7bd7e](https://github.com/smallTrogdor/design_system_flutter/commit/4d7bd7ea3e0b0e0e2b561b03207a4cb64d5f3862))
+* SBBMenuItem with factory for .tile ([7701223](https://github.com/smallTrogdor/design_system_flutter/commit/7701223b2d9a57aae0a3913d4391bc79e29987e5))
+* SBBPrimary Web Button style has no overlay. ([08a5f5b](https://github.com/smallTrogdor/design_system_flutter/commit/08a5f5ba696f63099161315a6ce73e600a777b34))
+* SBBResponsive class added. ([826807e](https://github.com/smallTrogdor/design_system_flutter/commit/826807e39338987c98b9ecf4fd4710025d15e574))
+* SBBResponsive class responsible for handling responsive designs. ([826807e](https://github.com/smallTrogdor/design_system_flutter/commit/826807e39338987c98b9ecf4fd4710025d15e574))
+* SBBWebText.running ([9f8cbba](https://github.com/smallTrogdor/design_system_flutter/commit/9f8cbbab8c9c9997a717f1680fcc35add557ab73))
+* separated components into pages (following Mobile Example). ([0c7cca2](https://github.com/smallTrogdor/design_system_flutter/commit/0c7cca2a5307d1eb4895405c5f3b04b3a9035feb))
+* separation of native / web example. import changes. ([1883e4d](https://github.com/smallTrogdor/design_system_flutter/commit/1883e4d516a09eb0eea9035afaee7727499c5776))
+* support onHovered MaterialStateChange ([d2e1025](https://github.com/smallTrogdor/design_system_flutter/commit/d2e10259df25f5ffc5f9a7483627359a24d51c37))
+* typography page in example ([9f8cbba](https://github.com/smallTrogdor/design_system_flutter/commit/9f8cbbab8c9c9997a717f1680fcc35add557ab73))
+* unified text styles for web ([f1d4a58](https://github.com/smallTrogdor/design_system_flutter/commit/f1d4a58a1242f1afaaae47e31f1229d7d7073cc2))
+* uses buttonStyles to create web icon buttons ([f2d22c6](https://github.com/smallTrogdor/design_system_flutter/commit/f2d22c642fa724037c3f80dc72728f03007a207d))
+* WebHeaderNavItems react to tap even though already selected. ([d44cb01](https://github.com/smallTrogdor/design_system_flutter/commit/d44cb01adb736a49cd5cfbbce5e747973c38ec22))
+
+
+### Bug Fixes
+
+* add test.txt ([510f12a](https://github.com/smallTrogdor/design_system_flutter/commit/510f12a947f346af9577889c235546423b838769))
+* browser window shrink error ([2e0c8ec](https://github.com/smallTrogdor/design_system_flutter/commit/2e0c8ecb24850d34d448b576298c8be6fc80546e))
+* ChangeNotifierProvider got lost during change. ([1398e14](https://github.com/smallTrogdor/design_system_flutter/commit/1398e144aa27011602e36196702b01f378af1440))
+* correct title ([859c575](https://github.com/smallTrogdor/design_system_flutter/commit/859c575707641a6ac7df533e77148b5a2e7d165d))
+* creates small / large icons also in web. ([8b3b797](https://github.com/smallTrogdor/design_system_flutter/commit/8b3b7974cb1b074d11c9a06e871479a1c57402cb))
+* delete test.txt ([f56177e](https://github.com/smallTrogdor/design_system_flutter/commit/f56177e97e2341183076aea4791a309efa6c9d83))
+* height of SBBMenuTileItems is respected again. ([30e01ab](https://github.com/smallTrogdor/design_system_flutter/commit/30e01abfd5f0ffe3282c3162702a980b8d14b0b9))
+* instance property non-nullable warnings ([97a5664](https://github.com/smallTrogdor/design_system_flutter/commit/97a566464e096a92d2ca9cafb97c5a7783f00f60))
+* merge with main, theme and button changes ([ef8d6e4](https://github.com/smallTrogdor/design_system_flutter/commit/ef8d6e47063b3f0e152dd78a816a6f598d3ce191))
+* merge with main: theme and button changes, test changes ([bd43500](https://github.com/smallTrogdor/design_system_flutter/commit/bd435003336e2c834e8d71563496ec4614a3e8e5))
+* native example runs again. ([1398e14](https://github.com/smallTrogdor/design_system_flutter/commit/1398e144aa27011602e36196702b01f378af1440))
+* native theme is used within native example. ([1398e14](https://github.com/smallTrogdor/design_system_flutter/commit/1398e144aa27011602e36196702b01f378af1440))
+* Primary Button Web does not show loading indicator. ([8b1ff77](https://github.com/smallTrogdor/design_system_flutter/commit/8b1ff77f986452856b6d411c93e223baa71dcfd5))
+* rm required HostPlatform for SBBThemeData.light / dark ([56f2cb7](https://github.com/smallTrogdor/design_system_flutter/commit/56f2cb73c5fcb52fb34e93a50dda48c55ab37eb9))
+* sbb checkbox code optimizations ([69697ea](https://github.com/smallTrogdor/design_system_flutter/commit/69697eaced254dd120b2fa3d561e35e679a58162))
+* suffixIcon padding ([79440e5](https://github.com/smallTrogdor/design_system_flutter/commit/79440e54fe2309d99d99bb2d7e8fbf5e1358fde3))
+* textfield code optimizations ([525c680](https://github.com/smallTrogdor/design_system_flutter/commit/525c680ae2e426c2bf978bad963d89c268714422))
+* Web Header leading behaves conform to Material AppBar. ([dc19baf](https://github.com/smallTrogdor/design_system_flutter/commit/dc19baf994030d68b80313cc801b9db43037cd18))
+
 ## [Unreleased]
 
 ## [1.3.0] - 2024-05-30
