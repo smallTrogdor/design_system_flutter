@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 It is expected that you keep this format strictly, since we depend on it in our release workflow.
 
+## [1.4.0](https://github.com/smallTrogdor/design_system_flutter/compare/v1.3.1...v1.4.0) (2024-06-05)
+
+
+### Features
+
+* add test ([e199ff9](https://github.com/smallTrogdor/design_system_flutter/commit/e199ff9923ffe51639164874a03d2b6f2cd22d13))
+
 ## 1.3.1 (2024-06-05)
 
 
