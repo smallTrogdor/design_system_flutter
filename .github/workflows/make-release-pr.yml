@@ -1,17 +1,17 @@
 name: Make Release PR.
 
-on: 
+on:
   workflow_dispatch:
     inputs:
       semantic-versioning:
         description: Whether to increase major, minor or patch.
         required: true
-        default: 'patch'
+        default: "patch"
         type: choice
         options:
-        - patch
-        - minor
-        - major
+          - patch
+          - minor
+          - major
 
 jobs:
   pull-request-creation:
@@ -19,9 +19,6 @@ jobs:
       pull-requests: write
       contents: write
     runs-on: ubuntu-latest
-
-    outputs:
-      tag_name: ${{ steps.update-changelog.outputs.version }}
 
     steps:
       - name: Clone Repository
@@ -34,7 +31,7 @@ jobs:
           command: bump
           version: ${{ inputs.semantic-versioning }}
           keep-unreleased-section: true
-          tag-prefix: ''
+          tag-prefix: ""
 
       - name: Update Pubspec version
         uses: Dbono-dev/yaml-action@v1.0.3
@@ -43,12 +40,12 @@ jobs:
             {
               "version": "${{ steps.update-changelog.outputs.version }}"
             }
-          commentOutDevDependencies: 'false'
+          commentOutDevDependencies: "false"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6.0.5
         with:
-          token: ${{secrets.RELEASE_PR_PAT}}
+          token: ${{secrets.FGT_RELEASING}}
           commit-message: ${{ format('Prepare Release for version {0}', steps.update-changelog.outputs.version) }}
           branch: ${{ format('release/{0}', steps.update-changelog.outputs.version) }}
           title: ${{ format('Release {0}', steps.update-changelog.outputs.version) }}
@@ -56,5 +53,6 @@ jobs:
             Make changes for release.
             - Update pubspec
             - Update CHANGELOG.md
+            Merging this PR will trigger a github release using the corresponding workflow.
           labels: |
-            release
+            autorelease
