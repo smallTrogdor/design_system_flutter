@@ -3,7 +3,7 @@
 
 name: Validate
 
-on: [push, pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 # Ensure that new pushes/updates cancel running jobs
 concurrency:
@@ -79,14 +79,14 @@ jobs:
         with:
           java-version: "17"
           distribution: "temurin"
-          cache: 'gradle'
+          cache: "gradle"
       - run: flutter pub get
       - name: Build appbundle.
         run: flutter build appbundle --profile --no-pub
 
       - name: Upload appbundle as artifact.
         uses: actions/upload-artifact@v4
-        if: ${{ matrix.sdk == '' && github.event_name == 'pull_request' }}
+        if: ${{ matrix.sdk == '' && github.ref == 'refs/heads/main' }}
         with:
           name: app-profile.aab
           path: example/build/app/outputs/bundle/profile/
@@ -113,7 +113,7 @@ jobs:
       - name: Build iOS package
         run: flutter build ios --simulator
       - name: Upload Runner.app as artifact
-        if: ${{ matrix.sdk == '' && github.event_name == 'pull_request' }}
+        if: ${{ matrix.sdk == '' && github.ref == 'refs/heads/main' }}
         uses: actions/upload-artifact@v4
         with:
           name: fdsm-example.app
