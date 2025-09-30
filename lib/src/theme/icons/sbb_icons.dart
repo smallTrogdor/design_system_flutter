@@ -9,7 +9,7 @@ const mediumFontFamily = 'packages/sbb_design_system_mobile/SBBIconsMedium';
 const largeFontFamily = 'packages/sbb_design_system_mobile/SBBIconsLarge';
 
 // The names are given by digital.sbb.ch
-// ignore_for_file: constant_identifier_names
+// ignore_for_file: constant_identifier_namesd
 // dart format off
 sealed class SBBIcons {
   static const wine_cheese_small = IconData(0xf101, fontFamily: smallFontFamily);
