@@ -41,6 +41,7 @@ jobs:
 
       - name: Move files to correct dirs if exist
         run: |
+          set -euo pipefail
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
           for file in ./icons/*.ttf
@@ -55,6 +56,7 @@ jobs:
       - name: Diffing and file operations # checks git diff and moves all relevant files to artifact dir
         id: gitDiff
         run: |
+          set -euo pipefail
           test -n "$(git status "${GITHUB_WORKSPACE}/lib" --porcelain)"
           has_diff=$?
           echo "has_diff=${has_diff}" >> "$GITHUB_OUTPUT"
@@ -102,11 +104,13 @@ jobs:
       - name: Version Number
         id: version_number
         run: |
+          set -euo pipefail
           icon_version="$(cat ./artifact/.version)"
           echo "version=${icon_version}" >> "$GITHUB_OUTPUT"
 
       - name: Move files
         run: |
+          set -euo pipefail
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
           mv -f ./artifact/.version ./tool/font_scripts/icons
@@ -117,6 +121,8 @@ jobs:
         env:
           VERSION: ${{ steps.version_number.outputs.version }}
         run: |
+          set -euo pipefail
+          
           awk -v version="$VERSION" '
             BEGIN {
               unreleased_found = 0
