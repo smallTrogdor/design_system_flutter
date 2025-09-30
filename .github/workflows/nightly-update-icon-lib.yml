@@ -43,8 +43,14 @@ jobs:
         run: |
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
-          [ -f ./icons/*.ttf ] && mv -f ./icons/*.ttf "$fonts_dir"
-          [ -f ./icons/*.dart ] && mv -f ./icons/*.dart "$icons_dir"
+          for file in ./icons/*.ttf
+          do
+            [ -f "$file" ] && mv -f "$file" "$fonts_dir"
+          done
+          for file in ./icons/*.dart
+          do
+            [ -f "$file" ] && mv -f "$file" "$icons_dir"
+          done
 
       - name: Diffing and file operations # checks git diff and moves all relevant files to artifact dir
         id: gitDiff
@@ -52,7 +58,7 @@ jobs:
           test -n "$(git status "${GITHUB_WORKSPACE}/lib" --porcelain)"
           has_diff=$?
           echo "has_diff=${has_diff}" >> "$GITHUB_OUTPUT"
-          if (( $has_diff == 0 )); then
+          if (( has_diff == 0 )); then
             mkdir "${GITHUB_WORKSPACE}/artifacts"
             cp "${fonts_dir}"/sbb_icons_*.ttf "${GITHUB_WORKSPACE}"/artifacts
             cp "${icons_dir}"/sbb_*.dart "${GITHUB_WORKSPACE}"/artifacts
@@ -104,8 +110,8 @@ jobs:
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
           mv -f ./artifact/.version ./tool/font_scripts/icons
-          mv -f ./artifact/sbb_icons*.ttf $fonts_dir
-          mv -f ./artifact/sbb_*.dart $icons_dir
+          mv -f ./artifact/sbb_icons*.ttf "$fonts_dir"
+          mv -f ./artifact/sbb_*.dart "$icons_dir"
 
       - name: Add or update CHANGELOG entry
         env:
@@ -123,7 +129,7 @@ jobs:
             print $0
             next
           }
-            
+          
           if ($0 ~ /^## \[Unreleased\]/) {
             unreleased_found = 1
             print $0
@@ -135,20 +141,20 @@ jobs:
             print $0
             next
           }
-            
+          
           if (unreleased_found && changed_found && $0 ~ /^\- \(auto\): updated icon lib to version /) {
             $0 = "- (auto): updated icon lib to version " version
             entry_added = 1
             print $0
             next
           }
-                                                                           
+          
           if (unreleased_found && changed_found && !changed_entries_found && $0 !~ /^$/) {
             changed_entries_found = 1
             print $0
             next
           }
-                                                                           
+          
           if (unreleased_found && changed_found && changed_entries_found && !entry_added  && $0 ~ /^$/) {
             # changed section is over without having added the line
             $0 = "- (auto): updated icon lib to version " version "\n"
@@ -159,10 +165,10 @@ jobs:
             $0 = "### Changed\n\n- (auto): updated icon lib to version " version "\n\n" $0
             entry_added = 1
           }
-                                                                           
+          
           print $0
           }' CHANGELOG.md > CHANGELOG.md.tmp
-        
+          
           mv CHANGELOG.md.tmp CHANGELOG.md
 
       - name: Create Pull Request
