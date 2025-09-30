@@ -40,21 +40,21 @@ jobs:
         run: dart lib/update_icon_fonts.dart
 
       - name: Move files to correct dirs if exist
+        shell: bash {0}
         run: |
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
-          shopt -s nullglob
           for file in ./icons/*.ttf; do
             mv -f "$file" "$fonts_dir"/
           done
           for file in ./icons/*.dart; do
             mv -f "$file" "$icons_dir"/
           done
-          shopt -u nullglob
           
 
       - name: Diffing and file operations # checks git diff and moves all relevant files to artifact dir
         id: gitDiff
+        shell: bash {0}
         run: |
           test -n "$(git status "${GITHUB_WORKSPACE}/lib" --porcelain)"
           has_diff=$?
@@ -115,6 +115,7 @@ jobs:
           mv -f ./artifact/sbb_*.dart "$icons_dir"
 
       - name: Add or update CHANGELOG entry
+        shell: bash {0}
         env:
           VERSION: ${{ steps.version_number.outputs.version }}
         run: |
