@@ -15,5 +15,5 @@ runs:
       env:
         VERSION: ${{ inputs.version }}
         CHANGELOG_FILE: ${{ inputs.changelog-path }}
-      run: "${GITHUB_WORKSPACE}"/.github/actions/icon-lib-changelog-generator/update-changelog.sh "$VERSION" "$CHANGELOG_FILE"
+      run: .github/actions/icon-lib-changelog-generator/update-changelog.sh "$VERSION" "$CHANGELOG_FILE"
       shell: bash
