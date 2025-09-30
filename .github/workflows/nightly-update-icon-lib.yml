@@ -100,10 +100,13 @@ jobs:
 
       - name: Download Artifacts
         uses: actions/download-artifact@v5
+        with:
+          path: artifacts/
 
       - name: Version Number
         id: version_number
         run: |
+          ls -a
           icon_version="$(cat ./artifact/.version)"
           echo "version=${icon_version}" >> "$GITHUB_OUTPUT"
 
