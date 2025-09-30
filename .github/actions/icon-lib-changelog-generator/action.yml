@@ -16,5 +16,5 @@ runs:
         VERSION: ${{ inputs.version }}
         CHANGELOG_FILE: ${{ inputs.changelog-path }}
       run: update-changelog.sh
-      shell: bash {0}
+      shell: bash
 
