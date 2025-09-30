@@ -44,13 +44,14 @@ jobs:
         run: |
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
+          shopt -s nullglob
           for file in ./icons/*.ttf; do
             mv -f "$file" "$fonts_dir"/
           done
           for file in ./icons/*.dart; do
             mv -f "$file" "$icons_dir"/
           done
-          
+          shopt -u nullglob
 
       - name: Diffing and file operations # checks git diff and moves all relevant files to artifact dir
         id: gitDiff
