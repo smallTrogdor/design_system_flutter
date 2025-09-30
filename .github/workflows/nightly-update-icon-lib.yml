@@ -100,11 +100,12 @@ jobs:
 
       - name: Download Artifacts
         uses: actions/download-artifact@v5
+        with:
+          path: artifacts/
 
       - name: Version Number
         id: version_number
         run: |
-          ls -a
           icon_version="$(cat ./artifacts/.version)"
           echo "version=${icon_version}" >> "$GITHUB_OUTPUT"
 
@@ -113,9 +114,9 @@ jobs:
         run: |
           icons_dir="${GITHUB_WORKSPACE}/lib/src/theme/icons"
           fonts_dir="${GITHUB_WORKSPACE}/lib/fonts"
-          mv -f ./artifact/.version ./tool/font_scripts/icons
-          mv -f ./artifact/sbb_icons*.ttf "$fonts_dir"
-          mv -f ./artifact/sbb_*.dart "$icons_dir"
+          mv -f ./artifacts/.version ./tool/font_scripts/icons
+          mv -f ./artifacts/sbb_icons*.ttf "$fonts_dir"
+          mv -f ./artifacts/sbb_*.dart "$icons_dir"
 
       - name: Add or update CHANGELOG entry
         shell: bash {0}
